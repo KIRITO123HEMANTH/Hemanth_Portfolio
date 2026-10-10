@@ -49,7 +49,8 @@ export default function Footer() {
           </a>
         </div>
         <p className="footer__legal">
-          © {new Date().getFullYear()} {profile.fullName}
+          © {new Date().getFullYear()} {profile.fullName} <span aria-hidden="true">·</span>{' '}
+          <a className="link" href="/privacy.html">Privacy</a>
         </p>
       </div>
     </footer>

@@ -186,12 +186,15 @@ export default function ContactForm() {
       </div>
 
       <div className="form__foot">
+        <p className="form__hint">
+          {contactConfig.endpoint
+            ? 'Your message is sent through the contact service when you submit. See the privacy notice for details.'
+            : 'This opens your email app with the message ready. It is not sent until you choose to send it. See the '}
+          <a className="link" href="/privacy.html">privacy notice</a>.
+        </p>
         <button type="submit" className="btn btn--accent btn--big" disabled={status.state === 'sending'}>
           {status.state === 'sending' ? 'Sending…' : path === 'project' ? 'Send project details' : 'Send message'}
         </button>
-        <p className="form__hint">
-          {contactConfig.endpoint ? 'Your message goes straight to my inbox.' : 'This opens your email app with the message ready to send.'}
-        </p>
       </div>
 
       <div aria-live="polite" className="form__status">
