@@ -191,7 +191,7 @@ export const projects: Project[] = [
     status: 'Academic research project · tested on a local Ganache network',
     links: [],
     visual: { kind: 'chain' },
-    note: 'Built on the open-source MediCare Chain DApp (MIT licence), extended for this research. Not deployed to a public network and not used with real patient data.',
+    note: 'A research prototype. Not deployed to a public network and not used with real patient data.',
     caseStudyLabel: 'Explore the project',
     featured: true,
   },
